@@ -70,6 +70,10 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+     
+    - name: Revert specific commit
+       run: |
+         git revert --no-edit 6488a08057615d80cf3f2a43944301e259ae7e83
 
     - name: Load custom feeds
       run: |
