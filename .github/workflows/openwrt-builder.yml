@@ -70,7 +70,6 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-        git revert --no-edit 6488a08057615d80cf3f2a43944301e259ae7e83
 
     - name: Load custom feeds
       run: |
@@ -101,7 +100,11 @@ jobs:
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
-
+  
+    - name: Revert commit
+      run: |
+          git revert --no-edit 6488a08057615d80cf3f2a43944301e259ae7e83
+  
     - name: Compile the firmware
       id: compile
       run: |
