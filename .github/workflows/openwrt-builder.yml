@@ -35,9 +35,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-      
-    - name: Checkout Code
-      uses: actions/checkout@v3
       with:
           ref: 6488a08057615d80cf3f2a43944301e259ae7e83
 
