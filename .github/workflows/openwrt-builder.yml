@@ -35,8 +35,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-      with:
-          ref: 6488a08057615d80cf3f2a43944301e259ae7e83
 
     - name: 释放磁盘空间
       uses: jlumbroso/free-disk-space@main
