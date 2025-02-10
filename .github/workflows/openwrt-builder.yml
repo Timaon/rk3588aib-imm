@@ -101,10 +101,6 @@ jobs:
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
   
-    - name: Revert commit
-      run: |
-          git revert --no-edit 6488a08057615d80cf3f2a43944301e259ae7e83
-  
     - name: Compile the firmware
       id: compile
       run: |
