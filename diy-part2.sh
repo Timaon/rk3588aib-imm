@@ -23,3 +23,4 @@ rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftabl
 #rm -rf feeds/luci/packages/net/alist
 #rm -rf feeds/luci/applications/luci-app-alist
 #rm -rf feeds/luci/packages/net/alist
+rm -rf feeds/modem/driver/meig_QMI_WWAN
