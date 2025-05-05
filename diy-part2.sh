@@ -18,6 +18,9 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
-rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,containerd,netdata,haproxy,gnutls,containerd,alist,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
+rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,netdata,haproxy,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 rm -rf feeds/luci/applications/luci-app-alist
 rm -rf feeds/luci/packages/net/alist
+rm -rf package/feeds/packages/gnutls
+rm -rf package/feeds/packages/containerd
+rm -rf package/feeds/packages/alist
