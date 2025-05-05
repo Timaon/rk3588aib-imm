@@ -24,3 +24,6 @@ rm -rf feeds/luci/packages/net/alist
 rm -rf package/feeds/packages/gnutls
 rm -rf package/feeds/packages/containerd
 rm -rf package/feeds/packages/alist
+rm -rf package/kernel/mac80211
+rm -rf package/feeds/packages/smartmontools
+rm -rf package/feeds/packages/ruby
